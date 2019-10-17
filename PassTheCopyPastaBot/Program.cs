@@ -1,8 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
-using RestSharp;
 using System;
 using System.IO;
-using System.Linq;
 using System.Threading;
 using Telegram.Bot;
 using Telegram.Bot.Args;
