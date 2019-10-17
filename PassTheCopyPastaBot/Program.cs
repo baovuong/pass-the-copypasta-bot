@@ -37,11 +37,20 @@ namespace PassTheCopyPastaBot
         static async void Bot_OnMessage(object sender, MessageEventArgs e)
         {
             var pasta = new CopyPasta { CharacterLimit = 4000 };
-            if (e.Message.Text != null)
+            if (e.Message.Text != null && e.Message.Text.Length > 0)
             {
                 Console.WriteLine($"Received a text message in chat {e.Message.Chat.Id}: {e.Message.Text}");
+
+                var position = e.Message.Text.IndexOf('@');
+                var command = e.Message.Text.ToLower();
+                
+                if (command.Contains(' '))
+                {
+                    command = command.Substring(0, e.Message.Text.IndexOf(' ')).Trim().ToLower();
+                }
+                command = command.Substring(0, position == -1 ? e.Message.Text.Length : position);
                 PostFilter postFilter;
-                switch (e.Message.Text.ToLower())
+                switch (command)
                 {
                     case "/top":
                         Console.WriteLine($"Sending Top Copypasta to {e.Message.Chat.Id}.");
@@ -56,7 +65,7 @@ namespace PassTheCopyPastaBot
                         postFilter = PostFilter.NEW;
                         break;
                     default:
-                        Console.WriteLine($"Unknown command from {e.Message.Chat.Id}.");
+                        Console.WriteLine($"Unknown command from {e.Message.Chat.Id}: {command}");
                         postFilter = PostFilter.INVALID;
                         break;
                 }
