@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29409.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassTheCopyPastaBot", "PassTheCopyPastaBot\PassTheCopyPastaBot.csproj", "{F971CCE8-03D8-49F1-B7E1-69728E9E1517}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PassTheCopyPastaBot", "PassTheCopyPastaBot\PassTheCopyPastaBot.csproj", "{F971CCE8-03D8-49F1-B7E1-69728E9E1517}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassTheCopyPastaBotService", "PassTheCopyPastaBotService\PassTheCopyPastaBotService.csproj", "{C94CFD16-5FB2-4F27-AFF0-45C8B8265AB7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{F971CCE8-03D8-49F1-B7E1-69728E9E1517}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F971CCE8-03D8-49F1-B7E1-69728E9E1517}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F971CCE8-03D8-49F1-B7E1-69728E9E1517}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C94CFD16-5FB2-4F27-AFF0-45C8B8265AB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C94CFD16-5FB2-4F27-AFF0-45C8B8265AB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C94CFD16-5FB2-4F27-AFF0-45C8B8265AB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C94CFD16-5FB2-4F27-AFF0-45C8B8265AB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

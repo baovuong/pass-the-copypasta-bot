@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "PassTheCopyPastaBotWorker": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
